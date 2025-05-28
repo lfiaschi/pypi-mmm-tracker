@@ -32,6 +32,10 @@ uv run pypi_mmm_tracker.py --days 90
 - `mmm_downloads_analysis.png`: Side-by-side plots of daily and cumulative downloads
 - `mmm_download_data.csv`: Raw daily download data for the selected period
 
+### Visualized Output
+
+![MMM Downloads Analysis](./mmm_downloads_analysis.png)
+
 ## Dependencies
 - Python 3.12+
 - matplotlib
