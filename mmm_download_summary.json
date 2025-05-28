@@ -1,0 +1,30 @@
+{
+  "PyMC Marketing": {
+    "total_downloads": 180682,
+    "last_month": 59200,
+    "last_week": 19650,
+    "last_day": 1860,
+    "package": "pymc-marketing"
+  },
+  "Google Meridian": {
+    "total_downloads": 69244,
+    "last_month": 16607,
+    "last_week": 4030,
+    "last_day": 146,
+    "package": "google-meridian"
+  },
+  "Meta Robyn (Python)": {
+    "total_downloads": 8800,
+    "last_month": 785,
+    "last_week": 180,
+    "last_day": 26,
+    "package": "robynpy"
+  },
+  "Uber Orbit": {
+    "total_downloads": 91019,
+    "last_month": 23283,
+    "last_week": 8165,
+    "last_day": 483,
+    "package": "orbit-ml"
+  }
+}
