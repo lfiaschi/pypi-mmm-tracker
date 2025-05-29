@@ -101,8 +101,12 @@ def create_plots(df, days, cumulative_df):
         print("No data available for visualization")
         return
 
-    # Set modern style using seaborn darkgrid
-    plt.style.use('seaborn-v0_8-darkgrid')
+    # Try to use ArviZ style if available
+    try:
+        import arviz as az
+        az.style.use('arviz-doc')
+    except ImportError:
+        plt.style.use('seaborn-v0_8-darkgrid')
     plt.rcParams['font.family'] = 'sans-serif'
     plt.rcParams['axes.linewidth'] = 1.5
     plt.rcParams['grid.linewidth'] = 1

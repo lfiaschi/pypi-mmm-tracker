@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "arviz>=0.21.0",
     "matplotlib>=3.10.3",
     "pandas>=2.2.3",
     "pypistats>=1.10.0",
