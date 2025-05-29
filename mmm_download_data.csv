@@ -1,5 +1,6 @@
 date,downloads,package,display_name
 2025-05-23,5042,pymc-marketing,PyMC Marketing
+2025-05-28,3195,pymc-marketing,PyMC Marketing
 2025-05-27,3050,pymc-marketing,PyMC Marketing
 2025-05-20,2791,pymc-marketing,PyMC Marketing
 2025-05-22,2748,pymc-marketing,PyMC Marketing
@@ -70,7 +71,6 @@ date,downloads,package,display_name
 2025-04-04,1013,pymc-marketing,PyMC Marketing
 2025-05-03,982,pymc-marketing,PyMC Marketing
 2025-03-14,972,pymc-marketing,PyMC Marketing
-2025-02-27,970,pymc-marketing,PyMC Marketing
 2025-04-19,970,pymc-marketing,PyMC Marketing
 2025-04-20,942,pymc-marketing,PyMC Marketing
 2025-03-03,908,pymc-marketing,PyMC Marketing
@@ -100,6 +100,7 @@ date,downloads,package,display_name
 2025-04-28,842,google-meridian,Google Meridian
 2025-03-26,828,google-meridian,Google Meridian
 2025-03-20,820,google-meridian,Google Meridian
+2025-05-28,819,google-meridian,Google Meridian
 2025-04-22,803,google-meridian,Google Meridian
 2025-05-01,794,google-meridian,Google Meridian
 2025-05-14,780,google-meridian,Google Meridian
@@ -132,7 +133,6 @@ date,downloads,package,display_name
 2025-03-12,629,google-meridian,Google Meridian
 2025-04-08,627,google-meridian,Google Meridian
 2025-03-06,625,google-meridian,Google Meridian
-2025-02-27,617,google-meridian,Google Meridian
 2025-03-10,617,google-meridian,Google Meridian
 2025-03-04,614,google-meridian,Google Meridian
 2025-03-11,610,google-meridian,Google Meridian
@@ -200,7 +200,6 @@ date,downloads,package,display_name
 2025-04-07,47,robynpy,Meta Robyn (Python)
 2025-05-07,47,robynpy,Meta Robyn (Python)
 2025-04-22,46,robynpy,Meta Robyn (Python)
-2025-02-27,45,robynpy,Meta Robyn (Python)
 2025-03-05,45,robynpy,Meta Robyn (Python)
 2025-04-01,45,robynpy,Meta Robyn (Python)
 2025-05-05,45,robynpy,Meta Robyn (Python)
@@ -215,6 +214,7 @@ date,downloads,package,display_name
 2025-03-14,40,robynpy,Meta Robyn (Python)
 2025-04-23,40,robynpy,Meta Robyn (Python)
 2025-03-07,38,robynpy,Meta Robyn (Python)
+2025-05-28,37,robynpy,Meta Robyn (Python)
 2025-05-27,36,robynpy,Meta Robyn (Python)
 2025-03-12,35,robynpy,Meta Robyn (Python)
 2025-03-06,34,robynpy,Meta Robyn (Python)
@@ -280,7 +280,6 @@ date,downloads,package,display_name
 2025-04-17,1070,orbit-ml,Uber Orbit
 2025-05-24,1047,orbit-ml,Uber Orbit
 2025-04-24,1010,orbit-ml,Uber Orbit
-2025-02-27,963,orbit-ml,Uber Orbit
 2025-05-14,962,orbit-ml,Uber Orbit
 2025-03-05,953,orbit-ml,Uber Orbit
 2025-04-18,917,orbit-ml,Uber Orbit
@@ -301,6 +300,7 @@ date,downloads,package,display_name
 2025-04-19,645,orbit-ml,Uber Orbit
 2025-05-16,642,orbit-ml,Uber Orbit
 2025-04-28,634,orbit-ml,Uber Orbit
+2025-05-28,622,orbit-ml,Uber Orbit
 2025-05-09,613,orbit-ml,Uber Orbit
 2025-03-19,601,orbit-ml,Uber Orbit
 2025-05-07,601,orbit-ml,Uber Orbit

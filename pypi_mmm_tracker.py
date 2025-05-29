@@ -100,43 +100,60 @@ def create_plots(df, days, cumulative_df):
     if df.empty or cumulative_df.empty:
         print("No data available for visualization")
         return
-    # Set cartoonish style
-    plt.style.use('seaborn-v0_8-bright')
-    plt.rcParams['font.family'] = 'Comic Sans MS'
-    plt.rcParams['axes.linewidth'] = 2
-    plt.rcParams['grid.linewidth'] = 1.5
+
+    # Set modern style using seaborn darkgrid
+    plt.style.use('seaborn-v0_8-darkgrid')
+    plt.rcParams['font.family'] = 'sans-serif'
+    plt.rcParams['axes.linewidth'] = 1.5
+    plt.rcParams['grid.linewidth'] = 1
     plt.rcParams['lines.linewidth'] = 3
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
-    fig.suptitle(f'Number of downloads comparison', fontsize=18, fontweight='bold', color='darkblue')
+    
+    # Create figure with modern aesthetics
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 7), dpi=100)
+    fig.suptitle('PyPI MMM Libraries Download Statistics', 
+                 fontsize=20, fontweight='bold', y=1.02)
+    
     # Left plot: Daily downloads (recent)
     for display_name in df['display_name'].unique():
         package_data = df[df['display_name'] == display_name].copy()
         package_data = package_data.sort_values('date')
         ax1.plot(package_data['date'], package_data['downloads'], 
-                marker='o', markersize=6, label=display_name, linewidth=3, alpha=0.8)
-    ax1.set_title(f'Daily Downloads (last {days} days)', fontsize=14, fontweight='bold', color='darkgreen')
-    ax1.set_xlabel('Date', fontweight='bold')
-    ax1.set_ylabel('Downloads per Day', fontweight='bold')
-    ax1.legend(frameon=True, shadow=True, fancybox=True)
-    ax1.grid(True, alpha=0.4, linestyle='--')
-    ax1.tick_params(axis='x', rotation=45)
-    ax1.set_facecolor('#f8f9fa')
+                marker='.', markersize=10, label=display_name, 
+                linewidth=3, alpha=0.9)
+    
+    ax1.set_title(f'Daily Downloads (Last {days} Days)', 
+                  fontsize=18, fontweight='medium', pad=15)
+    # Remove x-axis label
+    # ax1.set_xlabel('Date', fontsize=11, labelpad=10)
+    ax1.set_ylabel('Downloads per Day', fontsize=16, labelpad=10)
+    ax1.legend(frameon=True, framealpha=0.95, loc='upper left', fontsize=16)
+    ax1.grid(True, alpha=0.3)
+    ax1.tick_params(axis='x', rotation=30, labelsize=14)
+    ax1.tick_params(axis='y', labelsize=16)
+    
     # Right plot: Cumulative downloads since inception
     for display_name in cumulative_df['display_name'].unique():
         package_data = cumulative_df[cumulative_df['display_name'] == display_name].copy()
         package_data = package_data.sort_values('date')
         package_data['cumulative'] = package_data['downloads'].cumsum()
         ax2.plot(package_data['date'], package_data['cumulative'], 
-                marker='o', markersize=4, label=display_name, linewidth=2, alpha=0.8)
-    ax2.set_title('Cumulative Downloads (since inception)', fontsize=14, fontweight='bold', color='darkred')
-    ax2.set_xlabel('Date', fontweight='bold')
-    ax2.set_ylabel('Total Downloads', fontweight='bold')
-    ax2.legend(frameon=True, shadow=True, fancybox=True)
-    ax2.grid(True, alpha=0.4, linestyle='--')
-    ax2.tick_params(axis='x', rotation=45)
-    ax2.set_facecolor('#f8f9fa')
+                marker='.', markersize=8, label=display_name, 
+                linewidth=3, alpha=0.9)
+    
+    ax2.set_title('Cumulative Downloads (Since Inception)', 
+                  fontsize=18, fontweight='medium', pad=15)
+    # Remove x-axis label
+    # ax2.set_xlabel('Date', fontsize=11, labelpad=10)
+    ax2.set_ylabel('Total Downloads', fontsize=16, labelpad=10)
+    ax2.legend(frameon=True, framealpha=0.95, loc='upper left', fontsize=16)
+    ax2.grid(True, alpha=0.3)
+    ax2.tick_params(axis='x', rotation=30, labelsize=16)
+    ax2.tick_params(axis='y', labelsize=16)
+    
+    # Adjust layout and save
     plt.tight_layout()
-    plt.savefig('mmm_downloads_analysis.png', dpi=300, bbox_inches='tight')
+    plt.savefig('mmm_downloads_analysis.png', dpi=300, bbox_inches='tight', 
+                facecolor='white', edgecolor='none')
     print(f"📊 Visualization saved as 'mmm_downloads_analysis.png'")
 
 def save_data(df):
