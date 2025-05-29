@@ -125,7 +125,7 @@ def create_plots(df, days, cumulative_df):
                   fontsize=18, fontweight='medium', pad=15)
     # Remove x-axis label
     # ax1.set_xlabel('Date', fontsize=11, labelpad=10)
-    ax1.set_ylabel('Downloads per Day', fontsize=16, labelpad=10)
+    # ax1.set_ylabel('Downloads per Day', fontsize=16, labelpad=10)
     ax1.legend(frameon=True, framealpha=0.95, loc='upper left', fontsize=16)
     ax1.grid(True, alpha=0.3)
     ax1.tick_params(axis='x', rotation=30, labelsize=14)
@@ -144,7 +144,7 @@ def create_plots(df, days, cumulative_df):
                   fontsize=18, fontweight='medium', pad=15)
     # Remove x-axis label
     # ax2.set_xlabel('Date', fontsize=11, labelpad=10)
-    ax2.set_ylabel('Total Downloads', fontsize=16, labelpad=10)
+    # ax2.set_ylabel('Total Downloads', fontsize=16, labelpad=10)
     ax2.legend(frameon=True, framealpha=0.95, loc='upper left', fontsize=16)
     ax2.grid(True, alpha=0.3)
     ax2.tick_params(axis='x', rotation=30, labelsize=16)
